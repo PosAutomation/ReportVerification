@@ -17,13 +17,13 @@ public class StockVerify {
 	{	
 	System.setProperty("webdriver.chrome.driver", "D://Java//chromedriver.exe");
 	WebDriver Driver = new ChromeDriver();		
-	Driver.get("https://stage.fcstore.in/setup");
+	Driver.get("");
 	Driver.manage().window().maximize();
 	Driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	Driver.findElement(By.xpath("//input[@placeholder='Your device secret']")).sendKeys("19ec6744-4c57-4d65-8715-a6e2d09f2fb3");
 	Driver.findElement(By.xpath("//button[@class='button is-info is-outlined is-fullwidth']")).click();
-	Driver.findElement(By.xpath("//input[@name='email']")).sendKeys("pondicherry@firstcry.com");
-	Driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Firstcry@123");
+	Driver.findElement(By.xpath("//input[@name='email']")).sendKeys("");
+	Driver.findElement(By.xpath("//input[@name='password']")).sendKeys("");
 	Driver.findElement(By.xpath(".//*[@id='app']/section/div/div/div/div/div[1]/form/div[3]/button")).click();
 	//logger.log(LogStatus.PASS, "Successfully Logged IN");
 	//Login
