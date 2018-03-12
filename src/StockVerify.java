@@ -17,7 +17,7 @@ public class StockVerify {
 	{	
 	System.setProperty("webdriver.chrome.driver", "D://Java//chromedriver.exe");
 	WebDriver Driver = new ChromeDriver();		
-	Driver.get("");
+	Driver.get(" ");
 	Driver.manage().window().maximize();
 	Driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	Driver.findElement(By.xpath("//input[@placeholder='Your device secret']")).sendKeys("");
