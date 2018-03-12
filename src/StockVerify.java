@@ -20,7 +20,7 @@ public class StockVerify {
 	Driver.get("");
 	Driver.manage().window().maximize();
 	Driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	Driver.findElement(By.xpath("//input[@placeholder='Your device secret']")).sendKeys("19ec6744-4c57-4d65-8715-a6e2d09f2fb3");
+	Driver.findElement(By.xpath("//input[@placeholder='Your device secret']")).sendKeys("");
 	Driver.findElement(By.xpath("//button[@class='button is-info is-outlined is-fullwidth']")).click();
 	Driver.findElement(By.xpath("//input[@name='email']")).sendKeys("");
 	Driver.findElement(By.xpath("//input[@name='password']")).sendKeys("");
